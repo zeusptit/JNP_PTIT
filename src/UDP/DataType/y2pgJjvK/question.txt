@@ -1,0 +1,10 @@
+[Mã câu hỏi (qCode): y2pgJjvK].  Một chương trình server cho phép giao tiếp qua giao thức UDP tại cổng 2207. Yêu cầu là xây dựng một chương trình client trao đổi thông tin với server theo kịch bản:
+a.	Gửi thông điệp là một chuỗi chứa mã sinh viên và mã câu hỏi theo định dạng “;studentCode;qCode”. Ví dụ: “;B15DCCN001;371EA16D”
+b.	Nhận thông điệp là một chuỗi từ server theo định dạng “requestId; n; A1,A2,...An”, với
+-	requestId là chuỗi ngẫu nhiên duy nhất
+-	n là một số ngẫu nhiên nhỏ hơn 100.
+-            A1, A2 ... Am với m <= n là các giá trị nguyên liên tiếp, nhỏ hơn hoặc bằng n và không trùng nhau.
+Ví dụ: requestId;10;2,3,5,6,9
+c.	Tìm kiếm các giá trị còn thiếu và gửi lên server theo định dạng “requestId;B1,B2,...,Bm”
+Ví dụ: requestId;1,4,7,8,10
+d.	Đóng socket và kết thúc chương trình.
