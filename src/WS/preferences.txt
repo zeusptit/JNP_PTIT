@@ -1,0 +1,7 @@
+- Cài đặt JDK < 8 (Kiểm tra với java -version và wsimport -version)
+- Mỗi bài tạo 1 project mới
+- cd src
+- Mở terminal và thực hiện "wsimport -keep -p <exam_id> http://203.162.10.109:8080/JNPWS/<RequestService>?wsdl"
+    + Ví dụ: wsimport -keep -p Zj7wANXZ http://203.162.10.109:8080/JNPWS/DataService?wsdl
+- Tạo class WSClient trong folder vừa được tạo
+- Code như đã trình bày
