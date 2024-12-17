@@ -32,7 +32,7 @@ public class WSClient {
         QName qname = new QName("http://medianews.vn/", "ObjectService");
         ObjectService service = new ObjectService_Service(url, qname).getObjectServicePort();
 
-        String studentCode = "B21DCCN194";
+        String studentCode = "<MSV>";
         String qCode = "1A5b2wor";
 
         Employee employee = service.requestEmployee(studentCode, qCode);

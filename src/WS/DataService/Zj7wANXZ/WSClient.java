@@ -15,7 +15,7 @@ public class WSClient {
 
         DataService service = new DataService_Service(url, qname).getDataServicePort();
 
-        String studentCode = "B21DCCN194";
+        String studentCode = "<MSV>";
         String qCode = "Zj7wANXZ";
 
         List<Integer> data = service.getData(studentCode, qCode);

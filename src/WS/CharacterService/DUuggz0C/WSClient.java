@@ -25,7 +25,7 @@ public class WSClient {
 
         CharacterService service = new CharacterService_Service(url, qname).getCharacterServicePort();
 
-        String studentCode = "B21DCCN194";
+        String studentCode = "<MSV>";
         String qCode = "DUuggz0C";
 
         List<Integer> characterList = service.requestCharacter(studentCode, qCode);
