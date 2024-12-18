@@ -1,4 +1,4 @@
-- Cài đặt JDK < 8 (Kiểm tra với java -version và wsimport -version)
+- Cài đặt JDK <= 8 (Kiểm tra với java -version và wsimport -version)
 - Mỗi bài tạo 1 project mới
 - Mở terminal và thực hiện cd src
 - "wsimport -keep -p <exam_id> http://203.162.10.109:8080/JNPWS/<RequestService>?wsdl"

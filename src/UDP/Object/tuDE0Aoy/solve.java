@@ -11,10 +11,10 @@ public class solve {
     private static String processName(String name) {
         String[] str = name.split("\\s+");
         StringBuilder sb = new StringBuilder();
-        sb.append(str[str.length - 1]).append(" ");
-        for(int i = 0; i < str.length - 1; i++) {
+        for(int i = 1; i < str.length; i++) {
             sb.append(str[i]).append(" ");
         }
+        sb.append(str[0]).append(" ");
         return sb.toString().trim();
     }
 
@@ -35,7 +35,7 @@ public class solve {
         InetAddress inetAddress = InetAddress.getByName("203.162.10.109");
         DatagramSocket socket = new DatagramSocket();
 
-        String msg = ";<MSV>;tuDE0Aoy";
+        String msg = ";B21DCCN246;tuDE0Aoy";
         byte[] sendData = msg.getBytes();
         DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, inetAddress, 2209);
         socket.send(sendPacket);
