@@ -35,7 +35,7 @@ public class solve {
         InetAddress inetAddress = InetAddress.getByName("203.162.10.109");
         DatagramSocket socket = new DatagramSocket();
 
-        String msg = ";B21DCCN246;tuDE0Aoy";
+        String msg = ";<MSV>;tuDE0Aoy";
         byte[] sendData = msg.getBytes();
         DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, inetAddress, 2209);
         socket.send(sendPacket);

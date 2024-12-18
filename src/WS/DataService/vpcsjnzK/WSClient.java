@@ -31,7 +31,7 @@ public class WSClient {
         URL url = new URL("http://203.162.10.109:8080/JNPWS/DataService?wsdl");
         QName qname = new QName("http://medianews.vn/", "DataService");
 
-        String studentCode = "B21DCCN246";
+        String studentCode = "<MSV>";
         String qCode = "vpcsjnzK";
 
         DataService dataService = new DataService_Service(url, qname).getDataServicePort();

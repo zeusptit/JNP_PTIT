@@ -31,7 +31,7 @@ public class RMIClient {
         String address = "203.162.10.109";
         int registryPort = 1099;
         String serviceName = "RMIObjectService";
-        String studentCode = "B21DCCN246";
+        String studentCode = "<MSV>";
         String qCode = "K5CukziK";
 
         Registry registry = LocateRegistry.getRegistry(address, registryPort);
