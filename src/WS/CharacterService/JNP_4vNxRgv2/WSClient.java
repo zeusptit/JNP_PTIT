@@ -42,7 +42,7 @@ public class WSClient {
         URL url = new URL("http://203.162.10.109:8080/JNPWS/CharacterService?wsdl");
         QName qName = new QName("http://medianews.vn/", "CharacterService");
 
-        String studentCode = "B21DCCN246";
+        String studentCode = "<MSV>";
         String qCode = "4vNxRgv2";
 
         CharacterService characterService = new CharacterService_Service(url, qName).getCharacterServicePort();
